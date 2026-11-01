@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="vi"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Trắc nghiệm Điện tử cho CNTT</title>
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);--bg:#f6f7fb;--card:#fff;--tx:#1c2333;--mu:#667;--bd:#d9dde8;--ac:#2f5bea;--acs:#e8eefe;--ok:#1a8f4c;--oks:#e2f6ea;--no:#d33;--nos:#fde8e8}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){color-scheme:dark;--bg:#12151d;--card:#1b2030;--tx:#e8ebf4;--mu:#9aa3b8;--bd:#333b52;--ac:#6d8dff;--acs:#252f55;--ok:#4cd187;--oks:#173626;--no:#ff7b7b;--nos:#41202a}}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.w{max-width:760px;margin:0 auto;padding:16px}
+h1{font-size:1.3rem;margin:8px 0 2px}.sub{color:var(--mu);margin:0 0 12px;font-size:.9rem}
+.tabs{display:flex;gap:8px;margin:12px 0}
+.tab{flex:1;padding:10px;border:1px solid var(--bd);background:var(--card);color:var(--tx);border-radius:10px;font-weight:600;cursor:pointer;transition:.2s}
+.tab.on{background:var(--ac);color:#fff;border-color:var(--ac)}
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);padding:8px 0}
+.pg{height:8px;background:var(--bd);border-radius:8px;overflow:hidden}.pg i{display:block;height:100%;width:0;background:var(--ac);transition:width .3s}
+.pt{font-size:.85rem;color:var(--mu);margin-top:4px}
+h2{font-size:1.05rem;margin:22px 0 8px}
+.q{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:14px;margin:10px 0;animation:in .35s both}
+@keyframes in{from{opacity:0;transform:translateY(8px)}}
+.q b.n{color:var(--ac)}
+.o{display:flex;gap:10px;align-items:center;width:100%;text-align:left;margin-top:8px;padding:10px 12px;border:2px solid var(--bd);border-radius:10px;background:transparent;color:var(--tx);font:inherit;cursor:pointer;transition:transform .12s,border-color .2s,background .2s}
+.o:hover{border-color:var(--ac)}.o:active{transform:scale(.98)}
+.o span{flex:none;width:26px;height:26px;border-radius:50%;border:2px solid var(--bd);display:grid;place-items:center;font-size:.8rem;font-weight:700;transition:.2s}
+.o.sel{border-color:var(--ac);background:var(--acs)}.o.sel span{background:var(--ac);color:#fff;border-color:var(--ac);transform:scale(1.12)}
+.o.ok{border-color:var(--ok);background:var(--oks)}.o.ok span{background:var(--ok);color:#fff;border-color:var(--ok)}
+.o.bad{border-color:var(--no);background:var(--nos)}.o.bad span{background:var(--no);color:#fff;border-color:var(--no)}
+.done .o{cursor:default;pointer-events:none}
+.f{display:flex;gap:8px;align-items:center;margin-top:8px}
+.f input{flex:1;min-width:0;padding:10px;border:2px solid var(--bd);border-radius:10px;background:var(--bg);color:var(--tx);font:inherit}
+.f input:focus{outline:none;border-color:var(--ac);box-shadow:0 0 0 3px var(--acs)}
+.f input.ok{border-color:var(--ok);background:var(--oks)}.f input.bad{border-color:var(--no);background:var(--nos)}
+.ex{margin-top:8px;font-size:.88rem;color:var(--ok);font-weight:600}
+.btns{display:flex;gap:10px;margin:20px 0}
+.btn{flex:1;padding:14px;border:0;border-radius:12px;font:inherit;font-weight:700;cursor:pointer;transition:.15s}
+.btn:active{transform:scale(.97)}.sb{background:var(--ac);color:#fff}.rs{background:var(--card);color:var(--tx);border:1px solid var(--bd)}
+.res{background:var(--card);border:2px solid var(--ac);border-radius:16px;padding:18px;text-align:center;margin:12px 0;animation:in .4s both}
+.res .s{font-size:2.6rem;font-weight:800;color:var(--ac)}
+[hidden]{display:none!important}.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:10px}.card{display:flex;flex-direction:column;gap:2px;padding:14px;border:2px solid var(--bd);border-radius:14px;background:var(--card);color:var(--tx);font:inherit;text-align:left;cursor:pointer;transition:.2s}.card:hover{border-color:var(--ac);transform:translateY(-3px)}.card b{font-size:1.1rem}.card small{color:var(--mu)}.card em{font-style:normal;font-weight:700;color:var(--ok);font-size:.85rem}.top{display:flex;justify-content:space-between;align-items:center}.back{background:none;border:0;color:var(--ac);font:inherit;font-weight:600;cursor:pointer;padding:4px 0}#tm{font-variant-numeric:tabular-nums;font-size:1.25rem}#tm.warn{color:var(--no);animation:bl 1s infinite}@keyframes bl{50%{opacity:.5}}</style></head><body><div class="w">
+<h1>Trắc nghiệm Điện tử cho CNTT (IT3420)</h1>
+<p class="sub">Chương 1–4 · Phần I: 20 câu × 0,25 đ · Phần II: 10 câu điền × 0,5 đ · Thang 10</p>
+<div id="home"></div>
+<div id="ex" hidden><div class="bar"><div class="top"><button class="back" id="bk">← Danh sách đề</button><b id="tm">45:00</b></div><div class="pg"><i id="pg"></i></div><div class="pt" id="pt"></div></div>
+<div id="res"></div><div id="app"></div>
+<div class="btns"><button class="btn rs" id="rs">Làm lại</button><button class="btn sb" id="sb">Nộp bài</button></div></div>
+</div>
+<script>
+const M=(t,o,a)=>({t,o:o.split("|"),a:"ABCD".indexOf(a)});
+const F=(t,u,a,r)=>({t,u,a,r:r||.015});
+const D=[{
+m:[
+M("Điện trở là linh kiện thụ động có khả năng nào?","Cản trở dòng điện được định lượng rõ ràng|Lưu trữ điện tích|Lưu trữ từ trường|Khuếch đại tín hiệu","A"),
+M("Điện trở chính xác được ký hiệu bằng bao nhiêu vòng màu?","3 vòng|4 vòng|5 vòng|6 vòng","C"),
+M("Điện trở dán (SMD) có mã nhãn “103” có giá trị:","103 Ω|10 kΩ|1 kΩ|100 kΩ","B"),
+M("Mạch RC nối tiếp nguồn một chiều E, tại t = 0 tụ chưa tích điện tương đương với:","Hở mạch|Nguồn dòng|Điện trở rất lớn|Ngắn mạch","D"),
+M("Hằng số thời gian của mạch R-L nối tiếp là:","τ = R·L|τ = R/L|τ = L/R|τ = 1/(R·L)","C"),
+M("Ở trạng thái xác lập trong mạch một chiều, cuộn cảm được coi như:","Hở mạch|Ngắn mạch (dây dẫn)|Nguồn áp E|Tụ điện","B"),
+M("Trong bán dẫn loại n, hạt dẫn đa số là:","Lỗ trống|Ion dương|Proton|Electron","D"),
+M("Khi phân cực thuận lớp tiếp giáp pn thì:","Vùng nghèo thu hẹp, điện trở giảm|Vùng nghèo mở rộng, điện trở tăng|Vùng nghèo không đổi|Vùng nghèo thu hẹp, điện trở tăng","A"),
+M("Mô hình tuyến tính từng đoạn với r_f = 0, khi diode dẫn thì điện áp trên diode bằng:","0 V|V_T = 0,026 V|V_γ (điện áp ngưỡng)|Điện áp nguồn","C"),
+M("Giải mạch nhiều diode, giả thiết một diode khoá là đúng khi kết quả cho thấy:","I_D > 0|I_D = 0 và V_D ≤ V_γ|V_D > V_γ|I_D < 0 và V_D = V_γ","B"),
+M("Chỉnh lưu nửa chu kỳ, diode có V_γ, khi v_S > V_γ thì v_O bằng:","v_S − V_γ|v_S|V_γ|0","A"),
+M("Transistor npn ở chế độ tích cực thuận khi:","V_BE<0 và V_BC<0|V_BE<0 và V_BC>0|V_BE>0 và V_BC>0|V_BE>0 và V_BC<0","D"),
+M("Ở chế độ tích cực thuận, dòng i_C của npn được điều khiển bởi:","Điện áp v_BC|Điện áp v_BE|Điện áp nguồn V_CC|Điện trở R_C","B"),
+M("Transistor BJT ở chế độ khoá khi:","V_BB > V_BE(on)|V_CE = V_CE(sat)|V_BB < V_BE(on), I_B = I_C = 0|I_C = β·I_B","C"),
+M("Điện áp V_CE(sat) thường nằm trong khoảng:","0,1 – 0,3 V|0,7 V|2 – 3 V|Bằng V_CC","A"),
+M("Khi phân tích xoay chiều (tín hiệu nhỏ), nguồn áp một chiều được thay bằng:","Hở mạch|Nguồn dòng|Điện trở|Ngắn mạch","D"),
+M("Op-amp lý tưởng có:","Trở kháng vào 0, trở kháng ra ∞|Trở kháng vào ∞, trở kháng ra 0|Trở kháng vào ∞, trở kháng ra ∞|Trở kháng vào 0, trở kháng ra 0","B"),
+M("Hệ số khuếch đại vòng kín của mạch khuếch đại đảo (R1 vào, R2 hồi tiếp):","1 + R2/R1|R2/R1|−R2/R1|−R1/R2","C"),
+M("Mạch lặp (voltage follower) dùng op-amp có hệ số khuếch đại điện áp:","0|−1|∞|1","D"),
+M("Bộ ADC tức thời (flash) n-bit cần bao nhiêu bộ so sánh?","2ⁿ − 1|2ⁿ|n|2n","A")],
+f:[
+F("Điện trở 4 vòng màu: đỏ – tím – cam – vàng kim có giá trị","kΩ",27),
+F("Sau ... lần hằng số thời gian τ, quá trình quá độ coi như kết thúc","lần",5),
+F("Lọc thông thấp RC: R = 1 kΩ, C = 159 nF. Tần số cắt f_c ≈","Hz",1000),
+F("Điện áp nhiệt V_T của diode ở nhiệt độ phòng","V",.026),
+F("Chỉnh lưu nửa chu kỳ, V_γ = 0,7 V, biên độ vào 5 V. Đỉnh điện áp ra","V",4.3),
+F("Transistor npn tích cực thuận: β = 100, I_B = 20 µA. I_C =","mA",2),
+F("Phân cực 2 điện trở: V_CC = 10 V, R1 = 40 kΩ (nối V_CC), R2 = 10 kΩ (nối đất). V_TH =","V",2),
+F("I_CQ = 1 mA, V_T = 26 mV. g_m ≈ (làm tròn 1 chữ số thập phân)","mA/V",38.5),
+F("Khuếch đại đảo lý tưởng R1 = 2 kΩ, R2 = 10 kΩ. A_v =","",-5),
+F("ADC 4-bit biểu diễn được bao nhiêu giá trị khác nhau?","giá trị",16)]
+},{
+m:[
+M("Cuộn cảm là linh kiện dùng để chứa:","Điện tích|Từ trường|Nhiệt lượng|Điện trường","B"),
+M("Tụ đã nạp đầy trong mạch RC một chiều (nguồn E): i_C và v_C lần lượt là:","i_C = E/R, v_C = 0|i_C = 0, v_C = 0|i_C = E/R, v_C = E|i_C = 0, v_C = E","D"),
+M("Tần số xoay chiều càng lớn thì dung kháng của tụ điện:","Càng nhỏ|Càng lớn|Không đổi|Bằng vô cùng","A"),
+M("Với tụ điện phân cực, khi đấu nối cần chú ý:","Không cần quan tâm chiều cắm|Chỉ cần đúng trị số điện dung|Đúng cực âm/dương|Chỉ dùng với nguồn xoay chiều","C"),
+M("Mở khoá đột ngột trong mạch R-L, điện áp tiếp điểm có thể rất lớn vì:","Điện trở R tăng đột ngột|Dòng i_L giảm đột ngột nên v_L = L·di/dt rất lớn|Tụ điện phóng qua khoá|Nguồn E tự tăng","B"),
+M("Tại lớp tiếp giáp pn, hạt dẫn đa số khuếch tán:","Electron n→p, lỗ trống p→n|Electron p→n, lỗ trống n→p|Chỉ electron n→p|Chỉ lỗ trống n→p","A"),
+M("Khi điện áp ngược tăng đến điện áp đánh thủng thì:","Dòng ngược giảm về 0|Dòng ngược bão hoà ở I_S|Dòng ngược tăng vọt|Diode chuyển sang phân cực thuận","C"),
+M("Bước đầu tiên khi giải mạch nhiều diode là:","Giả thiết mọi điện trở bằng 0|Tính dòng bão hoà I_S|Vẽ đường tải xoay chiều|Giả thiết trạng thái (dẫn/khoá) của từng diode","D"),
+M("Kết hợp bộ lọc RC vào mạch chỉnh lưu cả chu kỳ nhằm:","Tăng biên độ gấp đôi|Làm dạng sóng ra mượt hơn|Đảo cực tính điện áp ra|Giảm tần số nguồn","B"),
+M("Phân tích xoay chiều mạch diode (nguồn AC << nguồn DC), diode được thay bằng:","Điện trở khuếch tán r_d|Nguồn áp V_γ|Hở mạch|Nguồn dòng","A"),
+M("Mạch E chung npn: tín hiệu vào và ra:","Cùng pha, được khuếch đại|Cùng pha, không khuếch đại|Ngược pha, được khuếch đại biên độ|Ngược pha, bị suy giảm","C"),
+M("Transistor BJT ở chế độ bão hoà thì B-E và B-C lần lượt phân cực:","Thuận – ngược|Ngược – ngược|Ngược – thuận|Thuận – thuận","D"),
+M("Ưu điểm phân cực bằng hai điện trở R1, R2 so với một điện trở R_B:","Điểm làm việc Q ổn định hơn khi β thay đổi|Tiêu thụ công suất lớn hơn|Cần điện trở cỡ MΩ|Không cần nguồn một chiều","A"),
+M("Khi xét hiệu ứng Early, điện trở r_o giữa C-E bằng:","V_T / I_CQ|V_A / I_CQ|β / g_m|V_A · I_CQ","B"),
+M("Để transistor làm khoá điện tử điều khiển tải, ta chuyển giữa hai trạng thái:","Tích cực thuận – tích cực ngược|Tích cực thuận – bão hoà|Khoá – tích cực thuận|Khoá – bão hoà","D"),
+M("Mạch khuếch đại đảo op-amp lý tưởng, đầu vào đảo là “đất ảo” khi:","Đầu vào không đảo nối nguồn dương|Đầu ra nối đất|Đầu vào không đảo nối đất|Hệ số khuếch đại vòng hở bằng 0","C"),
+M("Hệ số khuếch đại mạch khuếch đại không đảo lý tưởng (R1 nối đất, R2 hồi tiếp):","1 + R2/R1|−R2/R1|R2/R1|1 − R2/R1","A"),
+M("Khi xếp tầng các mạch op-amp lý tưởng, hệ số khuếch đại toàn mạch bằng:","Tổng các hệ số|Tích các hệ số|Hiệu các hệ số|Hệ số lớn nhất","B"),
+M("Tạo bộ so sánh mức khác không từ bộ so sánh mức 0 bằng cách:","Thêm hồi tiếp âm từ đầu ra về đầu vào đảo|Nối đất đầu vào không đảo|Mắc thêm tụ ở đầu ra|Đưa điện áp tham chiếu vào đầu vào đảo","D"),
+M("Để giảm lỗi lượng tử hoá, trước ADC người ta thường đặt:","Mạch cộng|Mạch lặp|Mạch lấy mẫu và giữ|Bộ so sánh","C")],
+f:[
+F("Điện trở 4 vòng màu: vàng – tím – đỏ – bạc có giá trị","kΩ",4.7),
+F("Tụ điện 2,2 µF đổi sang picofarad","pF",2200000),
+F("Mạch R-L: R = 1 kΩ, L = 10 mH. Hằng số thời gian τ =","µs",10),
+F("Hệ số lý tưởng n của diode thoả mãn 1 ≤ n ≤","",2),
+F("Chỉnh lưu nửa chu kỳ, V_γ = 0,7 V, biên độ vào 12 V. Đỉnh điện áp ra","V",11.3),
+F("Transistor npn tích cực thuận: I_B = 10 µA, I_C = 1,5 mA. β =","",150),
+F("E chung npn (không R_E): V_CC = 12 V, R_C = 4 kΩ, I_C = 1 mA. V_CE =","V",8),
+F("I_BQ = 10 µA, V_T = 0,026 V. r_π =","kΩ",2.6),
+F("Khuếch đại không đảo lý tưởng R1 = 10 kΩ, R2 = 40 kΩ. A_v =","",5),
+F("Tín hiệu có tần số lớn nhất 4 kHz. Tần số lấy mẫu nhỏ nhất theo Nyquist","kHz",8)]
+}];
+let cur=0,done=false,ans=[[],[]];
+const $=id=>document.getElementById(id);
+function parse(s){s=String(s).replace(/[−–]/g,"-").replace(/\s/g,"").replace(",",".");const m=s.match(/-?\d+(?:\.\d+)?(?:e[+-]?\d+)?/i);return m?parseFloat(m[0]):NaN}
+function render(){
+ const d=D[cur];let h='<h2>PHẦN I. Chọn 1 đáp án đúng</h2>';
+ d.m.forEach((q,i)=>{h+=`<div class="q" id="q${i}" style="animation-delay:${i*20}ms"><b class="n">Câu ${i+1}.</b> ${q.t}`+q.o.map((o,j)=>`<button class="o" data-i="${i}" data-j="${j}"><span>${"ABCD"[j]}</span>${o}</button>`).join("")+`</div>`});
+ h+='<h2>PHẦN II. Điền đáp án</h2>';
+ d.f.forEach((q,i)=>{h+=`<div class="q" id="f${i}"><b class="n">Câu ${21+i}.</b> ${q.t}<div class="f"><input inputmode="decimal" data-i="${i}" placeholder="Nhập đáp án"><em>${q.u}</em></div></div>`});
+ $("app").innerHTML=h;$("res").innerHTML="";done=false;ans[cur]={m:[],f:[]};upd();
+}
+function upd(){const a=ans[cur];const n=a.m.filter(x=>x!=null).length+a.f.filter(x=>x&&x.trim()).length;
+ $("pg").style.width=n/30*100+"%";$("pt").textContent=`Đã trả lời ${n}/30 câu`}
+$("app").addEventListener("click",e=>{const b=e.target.closest(".o");if(!b||done)return;
+ const i=+b.dataset.i,j=+b.dataset.j;ans[cur].m[i]=j;
+ document.querySelectorAll(`#q${i} .o`).forEach((x,k)=>x.classList.toggle("sel",k==j));upd()});
+$("app").addEventListener("input",e=>{if(e.target.tagName=="INPUT"){ans[cur].f[+e.target.dataset.i]=e.target.value;upd()}});
+$("sb").onclick=()=>{
+ if(done)return;const d=D[cur],a=ans[cur];let mc=0,fc=0;
+ d.m.forEach((q,i)=>{const ok=a.m[i]===q.a;if(ok)mc++;
+  document.querySelectorAll(`#q${i} .o`).forEach((x,k)=>{x.classList.remove("sel");if(k==q.a)x.classList.add("ok");else if(k==a.m[i])x.classList.add("bad")})});
+ d.f.forEach((q,i)=>{const inp=document.querySelector(`#f${i} input`),v=parse(a.f[i]||"");
+  const ok=!isNaN(v)&&Math.abs(v-q.a)<=Math.abs(q.a)*q.r+1e-9;if(ok)fc++;
+  inp.classList.add(ok?"ok":"bad");inp.disabled=true;
+  if(!ok)inp.closest(".q").insertAdjacentHTML("beforeend",`<div class="ex">Đáp án đúng: ${q.a} ${q.u}</div>`)});
+ done=true;document.querySelectorAll(".q").forEach(q=>q.classList.add("done"));
+ const sc=mc*.25+fc*.5;
+ $("res").innerHTML=`<div class="res"><div>Điểm của bạn</div><div class="s">${sc.toFixed(2).replace(".",",")}/10</div><div>Phần I: ${mc}/20 câu đúng (${(mc*.25).toFixed(2)} đ) · Phần II: ${fc}/10 câu đúng (${(fc*.5).toFixed(1)} đ)</div></div>`;
+ scrollTo({top:0,behavior:"smooth"})};
+$("rs").onclick=render;
+const rnd=s=>()=>{s|=0;s=s+0x6D2B79F5|0;let t=Math.imul(s^s>>>15,1|s);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296};
+const sh=(a,r)=>{a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(r()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a};
+const pk=(a,r)=>a[Math.floor(r()*a.length)],fm=x=>+x.toPrecision(3);
+const N=[[M("Tụ điện dùng để truyền tín hiệu giữa các tầng khuếch đại vì:","Ngăn dòng một chiều, cho dòng xoay chiều đi qua|Cho dòng một chiều đi qua, ngăn dòng xoay chiều|Tạo ra điện áp một chiều|Làm tăng điện trở mạch","A"),M("Đặc tính của cuộn cảm trong mạch là:","Ngăn dòng một chiều, dẫn dòng xoay chiều|Dẫn dòng một chiều, chặn dòng xoay chiều|Dẫn cả hai như nhau|Không dẫn cả hai","B"),M("Tại tần số cắt của mạch lọc RC, công suất đầu ra:","Gấp đôi|Không đổi|Bằng 0|Giảm một nửa","D"),M("Tại tần số cắt, điện áp ra của mạch lọc bằng bao nhiêu lần V_max?","0,707|0,5|0,1|1","A")],
+[M("Bán dẫn loại p được tạo bằng cách thêm vào nền Si tạp chất có mấy electron hoá trị?","5|4|3|2","C"),M("Diode lý tưởng khi phân cực thuận tương đương:","Hở mạch|Ngắn mạch|Nguồn dòng|Điện trở lớn","B"),M("Khi diode phân cực ngược, vùng nghèo:","Thu hẹp|Mở rộng|Biến mất|Không đổi","B"),M("Đặc tính dòng – áp của diode là quan hệ:","Tuyến tính|Không tuyến tính|Hằng số|Tỉ lệ nghịch","B")],
+[M("Ba cực của transistor BJT là:","Anode, Cathode, Gate|B (nền), C (thu), E (phát)|Source, Drain, Gate|Vào, ra, đất","B"),M("Mạch E chung có tín hiệu vào và ra lấy từ:","Vào B-E, ra C-E|Vào C-E, ra B-E|Vào E-C, ra B-C|Vào B-C, ra B-E","A"),M("Điện trở tương đương Thevenin được tính sau khi:","Hở mạch nguồn áp, ngắn mạch nguồn dòng|Ngắn mạch nguồn áp, hở mạch nguồn dòng|Ngắn mạch cả hai|Hở mạch cả hai","B"),M("Bộ khuếch đại tuyến tính phải phân cực transistor ở chế độ:","Khoá|Bão hoà|Tích cực thuận|Tích cực ngược","C")],
+[M("Op-amp thường được phân cực bằng:","Nguồn xoay chiều|Nguồn áp dương và âm V+, V−|Chỉ nguồn dòng|Không cần nguồn","B"),M("Đầu ra mạch cộng đảo dùng op-amp là:","Tổng đại số có trọng số của các đầu vào, đảo dấu|Hiệu hai đầu vào|Bằng một đầu vào|Luôn bằng 0","A"),M("Mạch khuếch đại vi sai khuếch đại:","Tổng hai tín hiệu vào|Sự khác nhau giữa hai tín hiệu vào|Chỉ tín hiệu vào đảo|Tần số tín hiệu","B"),M("Theo Nyquist, tần số lấy mẫu tối thiểu bằng:","Một nửa tần số lớn nhất|Đúng tần số lớn nhất|Hai lần tần số lớn nhất|Bốn lần tần số lớn nhất","C")]];
+const CH=[0,1,2,3].map(c=>[...D[0].m.slice([0,6,11,16][c],[6,11,16,20][c]),...D[1].m.slice([0,5,10,15][c],[5,10,15,20][c]),...N[c]]);
+const CL=["đen","nâu","đỏ","cam","vàng","lục","lam","tím","xám","trắng"];
+const TP=[r=>{const a=1+Math.floor(r()*9),b=Math.floor(r()*10),m=Math.floor(r()*5);return F(`Điện trở 4 vòng màu: ${CL[a]} – ${CL[b]} – ${CL[m]} – vàng kim có giá trị`,"kΩ",fm((a*10+b)*10**m/1000))},
+r=>{const R=pk([1,2,5,10],r),C=pk([1,2.2,4.7,10],r);return F(`Mạch RC nối tiếp: R = ${R} kΩ, C = ${C} µF. Hằng số thời gian τ =`,"ms",fm(R*C))},
+r=>{const L=pk([10,20,50,100],r),R=pk([1,2,5,10],r);return F(`Mạch RL nối tiếp: L = ${L} mH, R = ${R} kΩ. Hằng số thời gian τ =`,"µs",fm(L/R))},
+r=>{const R=pk([1,2,10],r),C=pk([10,47,100],r);return F(`Lọc thông thấp RC: R = ${R} kΩ, C = ${C} nF. Tần số cắt f_c ≈`,"Hz",Math.round(1e9/(2*Math.PI*R*1e3*C)),.03)},
+r=>{const V=pk([5,6,9,10,12,15],r);return F(`Chỉnh lưu nửa chu kỳ, V_γ = 0,7 V, biên độ vào ${V} V. Đỉnh điện áp ra`,"V",fm(V-.7))},
+r=>{const V=pk([5,9,12],r),R=pk([1,2,4],r);return F(`Diode (V_γ = 0,7 V) nối tiếp R = ${R} kΩ với nguồn một chiều ${V} V, phân cực thuận. Dòng I_D =`,"mA",fm((V-.7)/R),.02)},
+r=>{const b=pk([50,80,100,120,150,200],r),i=pk([10,20,25,40],r);return F(`Transistor npn tích cực thuận: β = ${b}, I_B = ${i} µA. I_C =`,"mA",fm(b*i/1000))},
+r=>{const V=pk([9,12,15],r),I=pk([1,2],r),R=pk([2,3,4],r);return F(`E chung npn (không R_E): V_CC = ${V} V, R_C = ${R} kΩ, I_C = ${I} mA. V_CE =`,"V",V-I*R)},
+r=>{const V=pk([10,12,15],r),a=pk([20,40,90],r),b=pk([10,20],r);return F(`Phân cực 2 điện trở: V_CC = ${V} V, R1 = ${a} kΩ (nối V_CC), R2 = ${b} kΩ (nối đất). V_TH =`,"V",fm(V*b/(a+b)),.02)},
+r=>{const I=pk([.5,1,2,5],r);return F(`I_CQ = ${I} mA, V_T = 26 mV. g_m ≈ (làm tròn 1 chữ số thập phân)`,"mA/V",fm(I/.026),.02)},
+r=>{const I=pk([5,10,13,20],r);return F(`I_BQ = ${I} µA, V_T = 0,026 V. r_π = V_T/I_BQ =`,"kΩ",fm(26/I),.02)},
+r=>{const a=pk([1,2,5],r),b=pk([10,20,50],r);return F(`Khuếch đại đảo lý tưởng R1 = ${a} kΩ, R2 = ${b} kΩ. A_v =`,"",-b/a)},
+r=>{const a=pk([1,2,5,10],r),b=pk([10,20,40,90],r);return F(`Khuếch đại không đảo lý tưởng R1 = ${a} kΩ, R2 = ${b} kΩ. A_v =`,"",fm(1+b/a))},
+r=>{const n=pk([3,5,6,8],r);return F(`ADC ${n}-bit biểu diễn được bao nhiêu giá trị khác nhau?`,"giá trị",2**n)},
+r=>{const f=pk([3,4,5,10,20],r);return F(`Tín hiệu có tần số lớn nhất ${f} kHz. Tần số lấy mẫu nhỏ nhất theo Nyquist`,"kHz",2*f)},
+r=>{const a=pk([-2,-3,-5],r),b=pk([-2,4,10],r);return F(`Hai tầng op-amp xếp tầng có A1 = ${a}, A2 = ${b}. Hệ số khuếch đại toàn mạch A_v =`,"",a*b)},
+r=>{const n=pk([3,4],r);return F(`ADC tức thời (flash) ${n}-bit cần bao nhiêu bộ so sánh?`,"bộ",2**n-1)}];
+function gen(n){const r=rnd(n*7919+13),m=[];CH.forEach(p=>sh(p,r).slice(0,5).forEach(q=>{const o=sh([0,1,2,3],r);m.push({t:q.t,o:o.map(i=>q.o[i]),a:o.indexOf(q.a)})}));
+const f=[[[0,1,2,3],3],[[4,5],2],[[6,7,8,9,10],3],[[11,12,13,14,15,16],2]].flatMap(([g,k])=>sh(g,r).slice(0,k)).map(i=>TP[i](r));return{m,f}}
+for(let n=3;n<=10;n++)D.push(gen(n));
+let TL=2700,tmr;const best={},mm=s=>String(Math.floor(s/60)).padStart(2,"0")+":"+String(s%60).padStart(2,"0");
+function tick(){TL--;$("tm").textContent=mm(Math.max(TL,0));$("tm").classList.toggle("warn",TL<=300);if(TL<=0){clearInterval(tmr);$("sb").onclick()}}
+function go(n){cur=n;$("home").hidden=true;$("ex").hidden=false;render();TL=2700;$("tm").textContent="45:00";$("tm").classList.remove("warn");clearInterval(tmr);tmr=setInterval(tick,1000);scrollTo(0,0)}
+function renderHome(){$("home").innerHTML='<h2>Chọn đề thi thử</h2><p class="sub">Mỗi đề 30 câu, 45 phút. Đồng hồ chạy ngay khi bạn mở đề và tự động nộp bài khi hết giờ.</p><div class="grid">'+D.map((_,i)=>`<button class="card" data-n="${i}"><b>Đề ${i+1}</b><small>45 phút · 30 câu</small><em>${best[i]!=null?"Điểm cao nhất: "+best[i].toFixed(2).replace(".",","):"Chưa làm"}</em></button>`).join("")+'</div>';$("home").hidden=false;$("ex").hidden=true}
+$("home").addEventListener("click",e=>{const c=e.target.closest(".card");if(c)go(+c.dataset.n)});
+$("bk").onclick=()=>{clearInterval(tmr);renderHome();scrollTo(0,0)};
+$("rs").onclick=()=>go(cur);
+const os=$("sb").onclick;$("sb").onclick=()=>{if(done)return;clearInterval(tmr);os();$("tm").classList.remove("warn");const s=parseFloat($("res").querySelector(".s").textContent.replace(",","."));best[cur]=Math.max(best[cur]||0,s);$("res").firstChild.insertAdjacentHTML("beforeend",`<div>Thời gian làm bài: ${mm(2700-Math.max(TL,0))}</div>`)};
+
+renderHome();
+</script></body></html>
